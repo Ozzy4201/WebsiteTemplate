@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #191a1a;
+}
+
+main {
+  align-items: center;
+}
+
+.background {
+    z-index: 5;
+    width: 100%;
+    height:100%;
+}
+
+nav{
+    z-index:100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Koulen', cursive;
+    background-color: #191a1a;
+    padding: 0px;
+  }
+  
+.logo {
+    color: #f2f2f2;
+    letter-spacing: 0.75vh;
+    font-size: 2.2vw;
+}
+  
+nav ul{
+    width:50%;
+}
+  
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+  
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.5vw;
+    letter-spacing: 4px;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+  
+.nav-links a:hover {
+    letter-spacing: 5px;
+    padding: 10px;
+    background-color: #666666;
+    color: #b0b0b0;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.bck {
+  height: 100%;
+  width: 100%;
+  background: url(file:///Z:/Programming/Websites/SiteTemplate/svgs/layered-waves-haikei.svg); 
+  z-index: 1000;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.white {
+  height: 100vh;
+  width: 100%;
+}
+
+.mainText {
+  margin: 0;
+  padding: 5vh;
+  padding-top: 15px;
+  text-align: center;
+  h1 {
+    color: white;
+    font-family: "koulen", cursive;
+    font-size: 4vw;
+  }
+  p {
+    color: white;
+    font-family: "koulen", cursive;
+    font-size: 1.5vw;
+  }
+}
+
+
+
+.squares {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden; 
+}
+.square {
+    animation: squares 9.5s cubic-bezier(0.36, 0, 0.91, 0.64);
+    align-self: flex-end;
+    width: 1em;
+    height: 1em;
+    transform: translateY(100%);
+    background: #FFFFFF; 
+    &:nth-child(2) { 
+      height: 1.5em;  
+      width: 3em;   
+      animation-delay: 1s;
+      animation-duration: 17s; 
+      -webkit-filter: blur(5px);
+      filter: blur(5px); }
+    &:nth-child(3) { 
+      height: 2em;    
+      width: 1em;   
+      animation-delay: 1.5s;
+      animation-duration: 8s; 
+      -webkit-filter: blur();
+      filter: blur(); }
+    &:nth-child(4) { 
+      height: 1em;    
+      width: 1.5em; 
+      animation-delay: 0.5s;
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      animation-duration: 13s }
+    &:nth-child(5) { 
+      height: 1.25em; 
+      width: 2em;   
+      animation-delay: 4s;
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+      animation-duration: 11s }
+    &:nth-child(6) { 
+      height: 2.5em;  
+      width: 2em;   
+      animation-delay: 2s;
+      -webkit-filter: blur(1px);
+      filter: blur(1px);
+      animation-duration: 9s }
+    &:nth-child(7) { 
+      height: 5em;    
+      width: 2em;   
+      -webkit-filter: blur(2.5px);
+      filter: blur(2.5px);
+      animation-duration: 12s }
+    &:nth-child(8) { 
+      height: 1em;    
+      width: 3em;   
+      animation-delay: 5s;
+      -webkit-filter: blur(6px);
+      filter: blur(6px);
+      animation-duration: 18s }
+    &:nth-child(9) {
+      height: 1.5em; 
+      width: 2em; 
+      -webkit-filter: blur(0.5px);
+      filter: blur(0.5px);
+      animation-duration: 9s }
+    &:nth-child(9) {
+      height: 3em;
+      width: 2.4em;
+      animation-delay: 6s;
+      -webkit-filter: blur(0.5px);
+      filter: blur(0.5px);
+      animation-duration: 12s }
+      &:nth-child(10) {
+        height: 3em;
+        width: 2.4em;
+        animation-delay: 6s;
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        animation-duration: 4s }}
+  
+  @keyframes squares { 
+    from { transform: translateY(100%) rotate(-50deg) }
+    to   { transform: translateY(calc(-100vh + -100%)) rotate(20deg) }}
+  
